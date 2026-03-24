@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Crimson Text', serif;
+  --color-fantasy-bg: #0a0a12;
+  --color-fantasy-surface: #12121e;
+  --color-fantasy-surface-light: #1a1a2e;
+  --color-fantasy-border: #2a2a3e;
+  --color-fantasy-gold: #c4a35a;
+  --color-fantasy-gold-light: #d4b96a;
+  --color-fantasy-gold-dark: #8b7340;
+  --color-fantasy-silver: #a0a0b0;
+  --color-fantasy-text: #e0d8c8;
+  --color-fantasy-text-dim: #8a8078;
+  --color-fantasy-accent: #7b4a9e;
+  --color-fantasy-accent-light: #9b6abe;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-fantasy-bg);
+  color: var(--color-fantasy-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-fantasy-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-fantasy-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-fantasy-gold-dark);
+}
