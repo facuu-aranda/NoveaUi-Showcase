@@ -259,7 +259,7 @@ export function Showcase() {
         {/* Logo header */}
         <div className="p-6 border-b border-fantasy-border">
           <h1 className="font-heading text-xl text-fantasy-gold tracking-wider">
-            Fantasy Nouveau
+            NouveaUI
           </h1>
           <p className="text-xs text-fantasy-text-dim mt-1">UI Component Library</p>
         </div>
